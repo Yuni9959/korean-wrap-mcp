@@ -1,0 +1,19 @@
+{
+  "name": "korean-wrap-mcp",
+  "version": "0.1.0",
+  "description": "Phrase-aware Korean headline wrapping. A local MCP server and dependency-free JavaScript core.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Yuni9959",
+  "engines": { "node": ">=22" },
+  "bin": { "korean-wrap-mcp": "bin/server.js" },
+  "exports": { ".": "./src/korean-wrap.js" },
+  "files": ["bin/", "src/", "README.ko.md", "LICENSE"],
+  "scripts": { "start": "node bin/server.js", "test": "node --test", "demo": "node examples/demo.js" },
+  "repository": { "type": "git", "url": "git+https://github.com/Yuni9959/korean-wrap-mcp.git" },
+  "homepage": "https://github.com/Yuni9959/korean-wrap-mcp#readme",
+  "bugs": { "url": "https://github.com/Yuni9959/korean-wrap-mcp/issues" },
+  "keywords": ["mcp", "mcp-server", "korean", "hangul", "typography", "line-breaking", "headlines"],
+  "dependencies": { "@modelcontextprotocol/server": "2.4.0", "zod": "4.6.7" },
+  "devDependencies": { "@modelcontextprotocol/client": "2.4.0" }
+}
